@@ -1,3 +1,4 @@
+import { getCurPathname } from "@/lib/pathname";
 import Link from "next/link";
 
 interface BreadcrumbItem {
@@ -9,7 +10,8 @@ interface BreadcrumbProps {
   items: BreadcrumbItem[];
 }
 
-export default function Breadcrumb({ items }: BreadcrumbProps) {
+export default async function Breadcrumb({ items }: BreadcrumbProps) {
+  const currentPath = await getCurPathname();
   return (
     <nav className="flex items-center space-x-2 text-sm text-gray-600 mb-4">
       {items.map((item, index) => (

@@ -11,13 +11,13 @@ export default function Header() {
     { name: "Trang chủ", href: "/" },
     {
       name: "Tổ chức",
-      href: "/orgarnisation/board-of-direction",
+      href: "/orgarnisation",
       submenu: [
-        { name: "Giới thiệu", href: "/orgarnisation/board-of-direction" },
+        { name: "Giới thiệu", href: "/orgarnisation" },
         { name: "Ban lãnh đạo", href: "/orgarnisation/board-of-direction" },
-        { name: "Nhóm Nghiên cứu", href: "#" },
-        { name: "Labs", href: "#" },
-        { name: "Cựu thành viên", href: "#" },
+        { name: "Nhóm Nghiên cứu", href: "/orgarnisation/research-groups" },
+        { name: "Labs", href: "/orgarnisation/labs" },
+        { name: "Cựu thành viên", href: "/orgarnisation/alumni" },
       ],
     },
     {

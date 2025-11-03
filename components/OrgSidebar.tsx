@@ -1,22 +1,18 @@
 "use client";
 
 import Link from "next/link";
-import { usePathname } from "next/navigation";
 
 interface OrgSidebarProps {
-  currentPath?: string;
+  currentPath: string;
 }
 
 export default function OrgSidebar({ currentPath }: OrgSidebarProps) {
-  const pathname = usePathname();
-  const activePath = currentPath || pathname;
-
   const menuItems = [
-    { name: "Giới thiệu", href: "/orgarnisation/board-of-direction" },
+    { name: "Giới thiệu", href: "/orgarnisation" },
     { name: "Ban lãnh đạo", href: "/orgarnisation/board-of-direction" },
-    { name: "Nhóm Nghiên cứu", href: "#" },
-    { name: "Labs", href: "#" },
-    { name: "Cựu thành viên", href: "#" },
+    { name: "Nhóm Nghiên cứu", href: "/orgarnisation/research-groups" },
+    { name: "Labs", href: "/orgarnisation/labs" },
+    { name: "Cựu thành viên", href: "/orgarnisation/alumni" },
   ];
 
   return (
@@ -24,7 +20,7 @@ export default function OrgSidebar({ currentPath }: OrgSidebarProps) {
       <h2 className="text-xl font-bold mb-6 text-gray-800">Tổ chức</h2>
       <nav className="space-y-2">
         {menuItems.map((item) => {
-          const isActive = activePath === item.href;
+          const isActive = currentPath === item.href;
           return (
             <Link
               key={item.name}
