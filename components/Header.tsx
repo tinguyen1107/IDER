@@ -3,48 +3,50 @@
 import { useState } from "react";
 import Link from "next/link";
 
+export const NAVIGATION = [
+  { name: "Trang chủ", href: "/" },
+  {
+    name: "Tổ chức",
+    href: "/org",
+    submenu: [
+      { name: "Giới thiệu", href: "/org" },
+      { name: "Ban lãnh đạo", href: "/org/board-of-direction" },
+      { name: "Nhóm Nghiên cứu", href: "/org/research-groups" },
+      { name: "Labs", href: "/org/labs" },
+      { name: "Cựu thành viên", href: "/org/alumni" },
+    ],
+  },
+  {
+    name: "Dự án",
+    href: "/projects",
+    submenu: [
+      { name: "Dự án hợp tác quốc tế", href: "/projects/international" },
+      { name: "Dự án trong nước", href: "/projects/domestic" },
+    ],
+  },
+  { name: "Công bố Khoa học", href: "/publications" },
+  {
+    name: "Tin tức",
+    href: "/news",
+    submenu: [
+      { name: "Dự án", href: "/news/projects" },
+      { name: "Tạp chí & Hội nghị", href: "/news/conferences" },
+      { name: "Học bổng & Khóa học", href: "/news/scholarships" },
+      { name: "Tin tức DTU", href: "/news/dtu" },
+      { name: "Tin tức Viện", href: "/news/institute" },
+      { name: "Thành tựu", href: "/news/achievements" },
+      { name: "Sự kiện", href: "/news/events" },
+    ],
+  },
+  { name: "Tuyển dụng", href: "/recruitment" },
+  { name: "Liên hệ", href: "/contact" },
+];
+
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
 
-  const navigation = [
-    { name: "Trang chủ", href: "/" },
-    {
-      name: "Tổ chức",
-      href: "/orgarnisation",
-      submenu: [
-        { name: "Giới thiệu", href: "/orgarnisation" },
-        { name: "Ban lãnh đạo", href: "/orgarnisation/board-of-direction" },
-        { name: "Nhóm Nghiên cứu", href: "/orgarnisation/research-groups" },
-        { name: "Labs", href: "/orgarnisation/labs" },
-        { name: "Cựu thành viên", href: "/orgarnisation/alumni" },
-      ],
-    },
-    {
-      name: "Dự án",
-      href: "/projects",
-      submenu: [
-        { name: "Dự án hợp tác quốc tế", href: "/projects/international" },
-        { name: "Dự án trong nước", href: "/projects/domestic" },
-      ],
-    },
-    { name: "Công bố Khoa học", href: "/publications" },
-    {
-      name: "Tin tức",
-      href: "/news",
-      submenu: [
-        { name: "Dự án", href: "/news/projects" },
-        { name: "Tạp chí & Hội nghị", href: "/news/conferences" },
-        { name: "Học bổng & Khóa học", href: "/news/scholarships" },
-        { name: "Tin tức DTU", href: "/news/dtu" },
-        { name: "Tin tức Viện", href: "/news/institute" },
-        { name: "Thành tựu", href: "/news/achievements" },
-        { name: "Sự kiện", href: "/news/events" },
-      ],
-    },
-    { name: "Tuyển dụng", href: "/recruitment" },
-    { name: "Liên hệ", href: "/contact" },
-  ];
+  
 
   return (
     <header className="bg-white shadow-md sticky top-0 z-50">
@@ -67,7 +69,7 @@ export default function Header() {
 
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center space-x-6">
-            {navigation.map((item) => (
+            {NAVIGATION.map((item) => (
               <div
                 key={item.name}
                 className="relative group"
@@ -136,7 +138,7 @@ export default function Header() {
         {/* Mobile Menu */}
         {isMenuOpen && (
           <div className="lg:hidden mt-4 pb-4 space-y-2">
-            {navigation.map((item) => (
+            {NAVIGATION.map((item) => (
               <div key={item.name}>
                 <Link
                   href={item.href}

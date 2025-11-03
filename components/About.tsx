@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function About() {
   return (
     <section className="py-16 bg-gray-50">
@@ -21,9 +23,9 @@ export default function About() {
             </div>
           </div>
           <div className="text-center">
-            <button className="bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors">
+            <Link href="/org" className="bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors">
               Chi tiết
-            </button>
+            </Link>
           </div>
         </div>
       </div>

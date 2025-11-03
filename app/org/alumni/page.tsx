@@ -7,8 +7,8 @@ export default async function AlumniPage() {
 
   const breadcrumbItems = [
     { label: "Trang chủ", href: "/" },
-    { label: "Tổ chức", href: "/orgarnisation" },
-    { label: "Cựu thành viên", href: "/orgarnisation/alumni" },
+    { label: "Tổ chức", href: "/org" },
+    { label: "Cựu thành viên", href: "/org/alumni" },
   ];
 
   const alumni = [
@@ -27,7 +27,7 @@ export default async function AlumniPage() {
 
         <div className="flex flex-col lg:flex-row gap-8 mt-8">
           {/* Sidebar */}
-          <aside className="lg:w-64 flex-shrink-0">
+          <aside className="lg:w-[300px] flex-shrink-0">
             <OrgSidebar currentPath={currentPath} />
           </aside>
 

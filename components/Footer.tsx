@@ -9,12 +9,18 @@ export default function Footer() {
           <div>
             <h3 className="text-xl font-bold mb-4">Giới thiệu</h3>
             <p className="text-gray-300 mb-4">
-              Chi nhánh Viện Nghiên cứu Thiên tai và Môi trường tại Thành phố Hồ Chí Minh (RIDES-HCM) là đơn vị trực thuộc Viện Nghiên cứu Thiên tai và Môi trường, hoạt động trong lĩnh vực môi trường, năng lượng xanh, biến đổi khí hậu và phát triển bền vững.
+              Chi nhánh Viện Nghiên cứu Thiên tai và Môi trường tại Thành phố Hồ Chí Minh (RIDES-HCM) là đơn
+              vị trực thuộc Viện Nghiên cứu Thiên tai và Môi trường, hoạt động trong lĩnh vực môi trường, năng
+              lượng xanh, biến đổi khí hậu và phát triển bền vững.
             </p>
             <div className="space-y-2 text-sm text-gray-400">
-              <Link href="/contact" className="hover:text-white">Liên hệ</Link>
+              <Link href="/contact" className="hover:text-white">
+                Liên hệ
+              </Link>
               <span className="mx-2">|</span>
-              <Link href="/orgarnisation" className="hover:text-white">Tổ chức</Link>
+              <Link href="/org" className="hover:text-white">
+                Tổ chức
+              </Link>
             </div>
           </div>
 
@@ -49,9 +55,11 @@ export default function Footer() {
           <div id="contact">
             <h3 className="text-xl font-bold mb-4">Liên Hệ</h3>
             <div className="space-y-2 text-gray-300">
+              <p className="font-semibold">Viện Nghiên cứu Thiên tai và Môi trường (RIDES)</p>
               <p className="font-semibold">Chi nhánh Viện Nghiên cứu Thiên tai và Môi trường tại TP.HCM</p>
               <p>
-                Số 38, đường D15A, Khu nhà ở liên kế Hưng Phú (mở rộng), Phường Phước Long, Thành phố Thủ Đức, TP Hồ Chí Minh, Việt Nam
+                Số 38, đường D15A, Khu nhà ở liên kế Hưng Phú (mở rộng), Phường Phước Long, Thành phố Thủ Đức,
+                TP Hồ Chí Minh, Việt Nam
               </p>
               <p className="font-semibold">Giám đốc Chi nhánh:</p>
               <p>Giáo sư, Tiến sĩ Dương Văn Sinh</p>
@@ -62,9 +70,7 @@ export default function Footer() {
         {/* Follow Us Section */}
         <div className="mt-8 pt-8 border-t border-gray-700">
           <h3 className="text-xl font-bold mb-4">Follow us</h3>
-          <div className="flex space-x-4">
-            {/* Add social media icons here */}
-          </div>
+          <div className="flex space-x-4">{/* Add social media icons here */}</div>
         </div>
 
         {/* Copyright */}
@@ -75,4 +81,3 @@ export default function Footer() {
     </footer>
   );
 }
-
