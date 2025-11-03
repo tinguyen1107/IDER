@@ -22,28 +22,28 @@ export default function Header() {
     },
     {
       name: "Dự án",
-      href: "#",
+      href: "/projects",
       submenu: [
-        { name: "Dự án hợp tác quốc tế", href: "#" },
-        { name: "Dự án trong nước", href: "#" },
+        { name: "Dự án hợp tác quốc tế", href: "/projects/international" },
+        { name: "Dự án trong nước", href: "/projects/domestic" },
       ],
     },
-    { name: "Công bố Khoa học", href: "#" },
+    { name: "Công bố Khoa học", href: "/publications" },
     {
       name: "Tin tức",
-      href: "#",
+      href: "/news",
       submenu: [
-        { name: "Dự án", href: "#" },
-        { name: "Tạp chí & Hội nghị", href: "#" },
-        { name: "Học bổng & Khóa học", href: "#" },
-        { name: "Tin tức DTU", href: "#" },
-        { name: "Tin tức Viện", href: "#" },
-        { name: "Thành tựu", href: "#" },
-        { name: "Sự kiện", href: "#" },
+        { name: "Dự án", href: "/news/projects" },
+        { name: "Tạp chí & Hội nghị", href: "/news/conferences" },
+        { name: "Học bổng & Khóa học", href: "/news/scholarships" },
+        { name: "Tin tức DTU", href: "/news/dtu" },
+        { name: "Tin tức Viện", href: "/news/institute" },
+        { name: "Thành tựu", href: "/news/achievements" },
+        { name: "Sự kiện", href: "/news/events" },
       ],
     },
-    { name: "Tuyển dụng", href: "#" },
-    { name: "Liên hệ", href: "#contact" },
+    { name: "Tuyển dụng", href: "/recruitment" },
+    { name: "Liên hệ", href: "/contact" },
   ];
 
   return (

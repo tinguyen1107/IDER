@@ -1,4 +1,5 @@
 import Breadcrumb from "@/components/Breadcrumb";
+import OrgSidebar from "@/components/OrgSidebar";
 import { getCurPathname } from "@/lib/pathname";
 
 export default async function BoardOfDirectionPage() {
@@ -7,7 +8,7 @@ export default async function BoardOfDirectionPage() {
   const breadcrumbItems = [
     { label: "Trang chủ", href: "/" },
     { label: "Tổ chức", href: "/orgarnisation" },
-    { label: "Ban lãnh đạo", href: "/board-of-direction" },
+    { label: "Ban lãnh đạo", href: "/orgarnisation/board-of-direction" },
   ];
 
   const leadership = {
@@ -38,7 +39,14 @@ export default async function BoardOfDirectionPage() {
       <div className="container mx-auto px-4 py-8">
         <Breadcrumb items={breadcrumbItems} />
 
-        <div className="max-w-5xl mx-auto mt-8">
+        <div className="flex flex-col lg:flex-row gap-8 mt-8">
+          {/* Sidebar */}
+          <aside className="lg:w-64 flex-shrink-0">
+            <OrgSidebar currentPath={currentPath} />
+          </aside>
+
+          {/* Main Content */}
+          <main className="flex-1">
           {/* Page Header */}
           <div className="bg-white rounded-lg shadow-md p-8 mb-8">
             <h1 className="text-4xl font-bold mb-4 text-gray-800">
@@ -139,6 +147,7 @@ export default async function BoardOfDirectionPage() {
               </p>
             </div>
           </div>
+          </main>
         </div>
       </div>
     </div>
