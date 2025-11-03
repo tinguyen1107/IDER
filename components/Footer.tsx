@@ -9,12 +9,12 @@ export default function Footer() {
           <div>
             <h3 className="text-xl font-bold mb-4">Giới thiệu</h3>
             <p className="text-gray-300 mb-4">
-              Viện Khoa học cơ bản & Ứng dụng thuộc Trường Đại học Duy Tân là đơn vị nghiên cứu và đào tạo trong nhiều lĩnh vực toán học, vật lý.
+              Chi nhánh Viện Nghiên cứu Thiên tai và Môi trường tại Thành phố Hồ Chí Minh (RIDES-HCM) là đơn vị trực thuộc Viện Nghiên cứu Thiên tai và Môi trường, hoạt động trong lĩnh vực môi trường, năng lượng xanh, biến đổi khí hậu và phát triển bền vững.
             </p>
             <div className="space-y-2 text-sm text-gray-400">
-              <Link href="#" className="hover:text-white">Liên hệ</Link>
+              <Link href="/contact" className="hover:text-white">Liên hệ</Link>
               <span className="mx-2">|</span>
-              <Link href="#" className="hover:text-white">Chúng tôi</Link>
+              <Link href="/orgarnisation" className="hover:text-white">Tổ chức</Link>
             </div>
           </div>
 
@@ -49,16 +49,12 @@ export default function Footer() {
           <div id="contact">
             <h3 className="text-xl font-bold mb-4">Liên Hệ</h3>
             <div className="space-y-2 text-gray-300">
-              <p className="font-semibold">Viện nghiên cứu Khoa học cơ bản & Ứng dụng</p>
+              <p className="font-semibold">Chi nhánh Viện Nghiên cứu Thiên tai và Môi trường tại TP.HCM</p>
               <p>
-                Đại học Duy Tân, 6 Trần Nhật Duật, Phường Tân Định, Quận 1, TP Hồ Chí Minh, Việt Nam
+                Số 38, đường D15A, Khu nhà ở liên kế Hưng Phú (mở rộng), Phường Phước Long, Thành phố Thủ Đức, TP Hồ Chí Minh, Việt Nam
               </p>
-              <p>+84-028-38.437.043</p>
-              <p>
-                <a href="mailto:ifas.hcm@duytan.edu.vn" className="hover:text-white">
-                  ifas.hcm@duytan.edu.vn
-                </a>
-              </p>
+              <p className="font-semibold">Giám đốc Chi nhánh:</p>
+              <p>Giáo sư, Tiến sĩ Dương Văn Sinh</p>
             </div>
           </div>
         </div>
@@ -73,7 +69,7 @@ export default function Footer() {
 
         {/* Copyright */}
         <div className="mt-8 pt-8 border-t border-gray-700 text-center text-gray-400">
-          <p>2022 © Đại học Duy Tân All rights reserved.</p>
+          <p>© 2025 RIDES-HCM All rights reserved.</p>
         </div>
       </div>
     </footer>

@@ -7,8 +7,8 @@ import Footer from "@/components/Footer";
 const inter = Inter({ subsets: ["latin", "vietnamese"] });
 
 export const metadata: Metadata = {
-  title: "Viện nghiên cứu Khoa học cơ bản & Ứng dụng",
-  description: "Viện Khoa học cơ bản & Ứng dụng thuộc Trường Đại học Duy Tân",
+  title: "Chi nhánh Viện Nghiên cứu Thiên tai và Môi trường tại TP.HCM",
+  description: "RIDES-HCM là đơn vị trực thuộc Viện Nghiên cứu Thiên tai và Môi trường, hoạt động trong lĩnh vực môi trường, năng lượng xanh, biến đổi khí hậu và phát triển bền vững",
 };
 
 export default function RootLayout({

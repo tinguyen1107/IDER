@@ -57,10 +57,10 @@ export default function Header() {
             </div>
             <div className="flex flex-col">
               <div className="text-lg font-bold text-blue-800">
-                IFAS
+                RIDES-HCM
               </div>
               <div className="text-xs text-gray-600 hidden md:block">
-                Viện nghiên cứu Khoa học cơ bản & Ứng dụng
+                Chi nhánh Viện Nghiên cứu Thiên tai và Môi trường tại TP.HCM
               </div>
             </div>
           </Link>
@@ -99,8 +99,8 @@ export default function Header() {
 
           {/* Contact Info */}
           <div className="hidden lg:flex flex-col text-sm text-gray-600">
-            <div>08.3650.403</div>
-            <div>ifas.hcm@duytan.edu.vn</div>
+            <div></div>
+            <div></div>
           </div>
 
           {/* Mobile Menu Button */}
@@ -164,8 +164,8 @@ export default function Header() {
               </div>
             ))}
             <div className="pt-4 border-t border-gray-200 text-sm text-gray-600">
-              <div>08.3650.403</div>
-              <div>ifas.hcm@duytan.edu.vn</div>
+              <div></div>
+              <div></div>
             </div>
           </div>
         )}

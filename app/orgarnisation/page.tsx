@@ -86,38 +86,67 @@ export default async function BoardOfDirectionPage() {
                 {/* Cơ sở pháp lý */}
                 <div>
                   <h3 className="text-xl font-bold mb-4 text-gray-800">
-                    <strong>Cơ sở pháp lý</strong>
+                    <strong>Lịch sử hình thành</strong>
                   </h3>
                   <p className="text-gray-700 leading-relaxed">
-                    Thành lập theo Nghị Quyết số 02/NQ-ĐHDT-HĐQT ngày 12/5/2018 của Chủ tịch Hội đồng quản trị Trường Đại học Duy Tân và Giấy chứng nhận hoạt động KH&CN số 382/ĐK-KHCN ngày 08/10/2018 cấp bởi Sở KH&CN TP. Hồ Chí Minh.
+                    Chi nhánh RIDES-HCM được thành lập theo <em>Giấy chứng nhận đăng ký hoạt động số 76/ĐK-KHCN-CN</em> do Sở Khoa học và Công nghệ Thành phố Hồ Chí Minh cấp ngày 13 tháng 10 năm 2025, căn cứ theo Luật Khoa học và Công nghệ 2013 và Nghị định 08/2014/NĐ-CP về tổ chức khoa học và công nghệ.
                   </p>
                 </div>
 
                 {/* Chức năng, nhiệm vụ */}
                 <div>
                   <h3 className="text-xl font-bold mb-4 text-gray-800">
-                    <strong>Chức năng, nhiệm vụ</strong>
+                    <strong>Chức năng và nhiệm vụ</strong>
                   </h3>
                   <div className="space-y-4 text-gray-700 leading-relaxed">
                     <p>
-                      Viện NCKHCB&ƯD có nhiệm vụ thực hiện các nghiên cứu khoa học và phát triển công nghệ trong các lĩnh vực: Kỹ thuật phần mềm, hệ thống thông tin, công nghệ kỹ thuật điện-điện tử, hoá học, vật lý, công nghệ kỹ thuật môi trường, sinh học, y khoa, vv... cũng như sản xuất thử nghiệm và chuyển giao công nghệ các sản phẩm hình thành từ kết quả nghiên cứu nêu trên.
+                      Chi nhánh RIDES-HCM có nhiệm vụ:
                     </p>
-                    <p>
-                      Viện NCKHCB&ƯD đẩy mạnh hợp tác, liên kết với các cơ quan, chuyên gia trong và ngoài nước về các lĩnh vực nghiên cứu có liên quan nhằm phát triển lực lượng và chất lượng nghiên cứu.
-                    </p>
-                    <p>
-                      Ngoài ra, Viện NCKHCB&ƯD có nhiệm vụ hỗ trợ Trường Đại học Duy Tân tư vấn và thực hiện đào tạo đại học, sau đại học, thực hiện các dịch vụ KH&CN.
-                    </p>
+                    <ul className="list-disc list-inside space-y-2 ml-4">
+                      <li>Tổ chức nghiên cứu, triển khai, chuyển giao công nghệ trong các lĩnh vực môi trường, năng lượng tái tạo, nông nghiệp tuần hoàn, ứng phó biến đổi khí hậu;</li>
+                      <li>Phối hợp với các địa phương, doanh nghiệp và trường đại học trong khu vực phía Nam để phát triển các mô hình kinh tế sinh thái và nông nghiệp xanh;</li>
+                      <li>Thực hiện đào tạo, hội thảo, hợp tác quốc tế và tư vấn kỹ thuật trong lĩnh vực khoa học môi trường;</li>
+                      <li>Là đầu mối đại diện của RIDES trong các chương trình hợp tác KH&CN quốc tế, bao gồm các dự án về xử lý rác thải nông nghiệp, tái tạo năng lượng, và phát triển bền vững.</li>
+                    </ul>
                   </div>
                 </div>
 
-                {/* Cơ cấu tổ chức Viện */}
+                {/* Các hoạt động tiêu biểu */}
                 <div>
                   <h3 className="text-xl font-bold mb-4 text-gray-800">
-                    <strong>Cơ cấu tổ chức Viện</strong>
+                    <strong>Các hoạt động tiêu biểu</strong>
                   </h3>
+                  <div className="space-y-3 text-gray-700 leading-relaxed">
+                    <p>
+                      Chi nhánh RIDES-HCM tham gia triển khai một số chương trình và đề án quốc gia do Viện RIDES chủ trì, bao gồm:
+                    </p>
+                    <ul className="list-disc list-inside space-y-2 ml-4">
+                      <li><em>Đề án "Rác thải nông nghiệp tuần hoàn sinh thái tại Việt Nam"</em> (Quyết định số 28/2025/QĐ-RIDES ngày 9/10/2025);</li>
+                      <li><em>Dự án "Rác thải nông nghiệp tuần hoàn sinh thái tỉnh Lào Cai"</em> (Quyết định số 29/2025/QĐ-RIDES ngày 10/10/2025);</li>
+                      <li>Các chương trình hợp tác về ứng dụng công nghệ vi sinh trong xử lý phụ phẩm nông nghiệp, mô hình nông nghiệp – năng lượng tuần hoàn, và phát triển cụm nghiên cứu năng lượng xanh khu vực phía Nam.</li>
+                    </ul>
+                  </div>
+                </div>
+
+                {/* Tổ chức và nhân sự */}
+                <div>
+                  <h3 className="text-xl font-bold mb-4 text-gray-800">
+                    <strong>Tổ chức và nhân sự</strong>
+                  </h3>
+                  <p className="text-gray-700 leading-relaxed mb-4">
+                    Chi nhánh RIDES-HCM được điều hành bởi <strong>Giám đốc Chi nhánh: Giáo sư, Tiến sĩ Dương Văn Sinh</strong> (đồng thời là Chủ tịch Hội đồng Khoa học Viện Nghiên cứu Thiên tai và Môi trường).
+                  </p>
+                  <p className="text-gray-700 leading-relaxed mb-4">
+                    Các bộ phận chuyên môn trực thuộc chi nhánh gồm:
+                  </p>
+                  <ol className="list-decimal list-inside space-y-2 text-gray-700 leading-relaxed ml-4 mb-6">
+                    <li>Phòng Nghiên cứu Môi trường và Năng lượng sạch</li>
+                    <li>Phòng Khoa học Ứng dụng và Dự án</li>
+                    <li>Phòng Hợp tác quốc tế và Truyền thông KH&CN</li>
+                    <li>Bộ phận Hành chính – Tổng hợp</li>
+                  </ol>
                   <p className="text-gray-700 leading-relaxed mb-6">
-                    NCKHCB&ƯD trực thuộc Trường Đại học Duy Tân trong năm học 2021-2022 có 35 thành viên, trong đó có 03 PGS.TS, 19 TS và 14 ThS/NCS/HVCH. Viện được điều hành bởi PGS.TS. Nguyễn Quang Hưng (Viện Trưởng) và 02 Phó Viện trưởng gồm PGS. TS. Nguyễn Đăng Nam, và TS. Võ Nguyễn Sơn. Bộ phận nghiên cứu được chia thành 06 nhóm chính: Công nghệ thông tin và Truyền thông (ICT); Vật lý; Vật liệu và Linh kiện tương lai; Vật liệu môi trường và Năng lượng; Mô phỏng; và Toán học. Danh sách cán bộ thuộc các nhóm nghiên cứu và phân bố học vị/học hàm được mô tả như trong Bảng.
+                    NCKHCB&ƯD trực thuộc Trường Đại học Duy Tân trong năm học 2021-2022 có 35 thành viên, trong đó có 03 PGS.TS, 19 TS và 14 ThS/NCS/HVCH. Bộ phận nghiên cứu được chia thành 06 nhóm chính: Công nghệ thông tin và Truyền thông (ICT); Vật lý; Vật liệu và Linh kiện tương lai; Vật liệu môi trường và Năng lượng; Mô phỏng; và Toán học. Danh sách cán bộ thuộc các nhóm nghiên cứu và phân bố học vị/học hàm được mô tả như trong Bảng.
                   </p>
 
                   {/* Staff Table */}
@@ -169,6 +198,27 @@ export default async function BoardOfDirectionPage() {
                       </tbody>
                     </table>
                   </div>
+                </div>
+
+                {/* Cơ quan chủ quản */}
+                <div>
+                  <h3 className="text-xl font-bold mb-4 text-gray-800">
+                    <strong>Cơ quan chủ quản</strong>
+                  </h3>
+                  <p className="text-gray-700 leading-relaxed mb-2">
+                    <strong>Viện Nghiên cứu Thiên tai và Môi trường</strong> (RIDES) – trực thuộc Liên hiệp các Hội Khoa học và Kỹ thuật Việt Nam (VUSTA).
+                  </p>
+                  <p className="text-gray-700 leading-relaxed mb-2">
+                    Viện có trụ sở chính tại Hà Nội, được Bộ Khoa học và Công nghệ Việt Nam cấp Giấy chứng nhận hoạt động KH&CN số A-1684 (lần cấp đổi ngày 28/04/2025).
+                  </p>
+                  <p className="text-gray-700 leading-relaxed mb-2">
+                    Viện hoạt động trong các lĩnh vực:
+                  </p>
+                  <ul className="list-disc list-inside space-y-1 text-gray-700 leading-relaxed ml-4">
+                    <li>Nghiên cứu khoa học, ứng phó thiên tai, bảo vệ môi trường;</li>
+                    <li>Công nghệ năng lượng tái tạo và xử lý rác thải;</li>
+                    <li>Đào tạo, tư vấn và hợp tác quốc tế về phát triển bền vững.</li>
+                  </ul>
                 </div>
               </div>
             </section>

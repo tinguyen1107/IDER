@@ -1,6 +1,8 @@
-# IFAS - Viện nghiên cứu Khoa học cơ bản & Ứng dụng
+# RIDES-HCM - Chi nhánh Viện Nghiên cứu Thiên tai và Môi trường tại TP.HCM
 
-A Next.js website for the Institute of Fundamental and Applied Sciences (IFAS) at Duy Tan University.
+A Next.js website for the Ho Chi Minh City Branch of the Research Institute of Disaster and Environment Science (RIDES-HCM).
+
+Chi nhánh Viện Nghiên cứu Thiên tai và Môi trường tại Thành phố Hồ Chí Minh (RIDES-HCM) là đơn vị trực thuộc Viện Nghiên cứu Thiên tai và Môi trường, hoạt động trong lĩnh vực môi trường, năng lượng xanh, biến đổi khí hậu và phát triển bền vững.
 
 ## Getting Started
 
