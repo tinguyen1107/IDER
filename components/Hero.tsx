@@ -10,7 +10,7 @@ export default function Hero() {
             RIDES-HCM là đơn vị trực thuộc Viện Nghiên cứu Thiên tai và Môi trường – một tổ chức khoa học và công nghệ hoạt động trong lĩnh vực môi trường, năng lượng xanh, biến đổi khí hậu và phát triển bền vững.
           </p>
           <p className="text-sm md:text-base mb-10 max-w-2xl mx-auto leading-relaxed opacity-90 italic">
-            "Thành lập ngày 13 tháng 10 năm 2025"
+            &ldquo;Thành lập ngày 13 tháng 10 năm 2025&rdquo;
           </p>
           <button className="bg-white text-blue-800 px-10 py-4 rounded-lg font-semibold hover:bg-blue-50 transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-1">
             Chi Tiết

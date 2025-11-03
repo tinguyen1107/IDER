@@ -121,8 +121,8 @@ export default async function BoardOfDirectionPage() {
                       Chi nhánh RIDES-HCM tham gia triển khai một số chương trình và đề án quốc gia do Viện RIDES chủ trì, bao gồm:
                     </p>
                     <ul className="list-disc list-inside space-y-2 ml-4">
-                      <li><em>Đề án "Rác thải nông nghiệp tuần hoàn sinh thái tại Việt Nam"</em> (Quyết định số 28/2025/QĐ-RIDES ngày 9/10/2025);</li>
-                      <li><em>Dự án "Rác thải nông nghiệp tuần hoàn sinh thái tỉnh Lào Cai"</em> (Quyết định số 29/2025/QĐ-RIDES ngày 10/10/2025);</li>
+                      <li><em>Đề án &ldquo;Rác thải nông nghiệp tuần hoàn sinh thái tại Việt Nam&rdquo;</em> (Quyết định số 28/2025/QĐ-RIDES ngày 9/10/2025);</li>
+                      <li><em>Dự án &ldquo;Rác thải nông nghiệp tuần hoàn sinh thái tỉnh Lào Cai&rdquo;</em> (Quyết định số 29/2025/QĐ-RIDES ngày 10/10/2025);</li>
                       <li>Các chương trình hợp tác về ứng dụng công nghệ vi sinh trong xử lý phụ phẩm nông nghiệp, mô hình nông nghiệp – năng lượng tuần hoàn, và phát triển cụm nghiên cứu năng lượng xanh khu vực phía Nam.</li>
                     </ul>
                   </div>
