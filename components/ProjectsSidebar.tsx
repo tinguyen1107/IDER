@@ -2,22 +2,19 @@
 
 import Link from "next/link";
 
-interface OrgSidebarProps {
+interface ProjectsSidebarProps {
   currentPath: string;
 }
 
-export default function OrgSidebar({ currentPath }: OrgSidebarProps) {
+export default function ProjectsSidebar({ currentPath }: ProjectsSidebarProps) {
   const menuItems = [
-    { name: "Giới thiệu", href: "/org" },
-    { name: "Ban lãnh đạo", href: "/org/board-of-direction" },
-    { name: "Nhóm Nghiên cứu", href: "/org/research-groups" },
-    { name: "Labs", href: "/org/labs" },
-    { name: "Cựu thành viên", href: "/org/alumni" }
+    { name: "DỰ ÁN HỢP TÁC QUỐC TẾ", href: "/projects/international" },
+    { name: "DỰ ÁN TRONG NƯỚC", href: "/projects/domestic" },
   ];
 
   return (
     <aside className="bg-white rounded-lg shadow-md p-6 sticky top-24">
-      <h2 className="text-xl font-bold mb-6 text-gray-800">Tổ chức</h2>
+      <h2 className="text-xl font-bold mb-6 text-gray-800">Dự Án</h2>
       <nav className="space-y-2">
         {menuItems.map((item) => {
           const isActive = currentPath === item.href;
@@ -39,3 +36,4 @@ export default function OrgSidebar({ currentPath }: OrgSidebarProps) {
     </aside>
   );
 }
+

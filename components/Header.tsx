@@ -3,48 +3,50 @@
 import { useState } from "react";
 import Link from "next/link";
 
+export const NAVIGATION = [
+  { name: "Trang chủ", href: "/" },
+  {
+    name: "Tổ chức",
+    href: "/org",
+    submenu: [
+      { name: "Giới thiệu", href: "/org" },
+      { name: "Ban lãnh đạo", href: "/org/board-of-direction" },
+      { name: "Nhóm Nghiên cứu", href: "/org/research-groups" },
+      { name: "Labs", href: "/org/labs" },
+      { name: "Cựu thành viên", href: "/org/alumni" },
+    ],
+  },
+  {
+    name: "Dự án",
+    href: "/projects",
+    submenu: [
+      { name: "Dự án hợp tác quốc tế", href: "/projects/international" },
+      { name: "Dự án trong nước", href: "/projects/domestic" },
+    ],
+  },
+  { name: "Công bố Khoa học", href: "/publications" },
+  {
+    name: "Tin tức",
+    href: "/news",
+    submenu: [
+      { name: "Dự án", href: "/news/projects" },
+      { name: "Tạp chí & Hội nghị", href: "/news/conferences" },
+      { name: "Học bổng & Khóa học", href: "/news/scholarships" },
+      { name: "Tin tức DTU", href: "/news/dtu" },
+      { name: "Tin tức Viện", href: "/news/institute" },
+      { name: "Thành tựu", href: "/news/achievements" },
+      { name: "Sự kiện", href: "/news/events" },
+    ],
+  },
+  { name: "Tuyển dụng", href: "/recruitment" },
+  { name: "Liên hệ", href: "/contact" },
+];
+
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
 
-  const navigation = [
-    { name: "Trang chủ", href: "/" },
-    {
-      name: "Tổ chức",
-      href: "/orgarnisation/board-of-direction",
-      submenu: [
-        { name: "Giới thiệu", href: "/orgarnisation/board-of-direction" },
-        { name: "Ban lãnh đạo", href: "/orgarnisation/board-of-direction" },
-        { name: "Nhóm Nghiên cứu", href: "#" },
-        { name: "Labs", href: "#" },
-        { name: "Cựu thành viên", href: "#" },
-      ],
-    },
-    {
-      name: "Dự án",
-      href: "#",
-      submenu: [
-        { name: "Dự án hợp tác quốc tế", href: "#" },
-        { name: "Dự án trong nước", href: "#" },
-      ],
-    },
-    { name: "Công bố Khoa học", href: "#" },
-    {
-      name: "Tin tức",
-      href: "#",
-      submenu: [
-        { name: "Dự án", href: "#" },
-        { name: "Tạp chí & Hội nghị", href: "#" },
-        { name: "Học bổng & Khóa học", href: "#" },
-        { name: "Tin tức DTU", href: "#" },
-        { name: "Tin tức Viện", href: "#" },
-        { name: "Thành tựu", href: "#" },
-        { name: "Sự kiện", href: "#" },
-      ],
-    },
-    { name: "Tuyển dụng", href: "#" },
-    { name: "Liên hệ", href: "#contact" },
-  ];
+  
 
   return (
     <header className="bg-white shadow-md sticky top-0 z-50">
@@ -57,17 +59,17 @@ export default function Header() {
             </div>
             <div className="flex flex-col">
               <div className="text-lg font-bold text-blue-800">
-                IFAS
+                RIDES-HCM
               </div>
               <div className="text-xs text-gray-600 hidden md:block">
-                Viện nghiên cứu Khoa học cơ bản & Ứng dụng
+                Chi nhánh Viện Nghiên cứu Thiên tai và Môi trường tại TP.HCM
               </div>
             </div>
           </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center space-x-6">
-            {navigation.map((item) => (
+            {NAVIGATION.map((item) => (
               <div
                 key={item.name}
                 className="relative group"
@@ -99,8 +101,8 @@ export default function Header() {
 
           {/* Contact Info */}
           <div className="hidden lg:flex flex-col text-sm text-gray-600">
-            <div>08.3650.403</div>
-            <div>ifas.hcm@duytan.edu.vn</div>
+            <div></div>
+            <div></div>
           </div>
 
           {/* Mobile Menu Button */}
@@ -136,7 +138,7 @@ export default function Header() {
         {/* Mobile Menu */}
         {isMenuOpen && (
           <div className="lg:hidden mt-4 pb-4 space-y-2">
-            {navigation.map((item) => (
+            {NAVIGATION.map((item) => (
               <div key={item.name}>
                 <Link
                   href={item.href}
@@ -164,8 +166,8 @@ export default function Header() {
               </div>
             ))}
             <div className="pt-4 border-t border-gray-200 text-sm text-gray-600">
-              <div>08.3650.403</div>
-              <div>ifas.hcm@duytan.edu.vn</div>
+              <div></div>
+              <div></div>
             </div>
           </div>
         )}
