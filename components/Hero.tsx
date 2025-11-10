@@ -35,7 +35,7 @@ export default function Hero() {
   };
 
   return (
-    <section className="relative text-white py-24 overflow-hidden">
+    <section className="relative text-white py-40 overflow-hidden">
       {/* Background Image Carousel */}
       <div className="absolute inset-0">
         {images.map((image, index) => (
@@ -45,7 +45,7 @@ export default function Hero() {
               index === currentIndex ? "opacity-100 z-10" : "opacity-0 z-0"
             }`}
             style={{
-              backgroundImage: `linear-gradient(135deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.4) 100%), url(${image})`
+              backgroundImage: `linear-gradient(135deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 100%), url(${image})`
             }}
           />
         ))}
@@ -73,24 +73,18 @@ export default function Hero() {
 
       {/* Content */}
       <div className="container mx-auto px-4 relative z-10">
-        <div className="text-left max-w-4xl">
+        <div className="text-left max-w-5xl">
           <h1 className="text-4xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight">
-            Chi nhánh Viện Nghiên cứu Thiên tai và Môi trường tại Thành phố Hồ Chí Minh
+            Viện Nghiên cứu Thiên tai và Môi trường
           </h1>
-          <p className="text-lg md:text-xl lg:text-2xl mb-4 max-w-3xl leading-relaxed opacity-95">
-            RIDES-HCM là đơn vị trực thuộc Viện Nghiên cứu Thiên tai và Môi trường – một tổ chức khoa học và
-            công nghệ hoạt động trong lĩnh vực môi trường, năng lượng xanh, biến đổi khí hậu và phát triển bền
-            vững.
+          <p className="text-lg md:text-xl lg:text-2xl mb-4 max-w-4xl leading-relaxed opacity-95">
+            RIDES là tổ chức khoa học và công nghệ hoạt động theo định hướng ứng dụng, với sứ mệnh nghiên cứu,
+            chuyển giao công nghệ và đề xuất giải pháp nhằm ứng phó, giảm thiểu rủi ro thiên tai, thích ứng
+            với biến đổi khí hậu và bảo vệ môi trường.
           </p>
           <p className="text-sm md:text-base mb-10 max-w-2xl leading-relaxed opacity-90 italic">
             &ldquo;Thành lập ngày 13 tháng 10 năm 2025&rdquo;
           </p>
-          <Link
-            href="/org"
-            className="bg-white text-blue-800 px-10 py-4 rounded-lg font-semibold hover:bg-blue-50 transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-1"
-          >
-            Chi Tiết
-          </Link>
         </div>
       </div>
 
