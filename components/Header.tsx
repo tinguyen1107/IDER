@@ -1,7 +1,9 @@
 "use client";
 
-import { useState } from "react";
 import Link from "next/link";
+import { useState } from "react";
+
+import Logo from "./Logo";
 
 export const NAVIGATION = [
   { name: "Trang chủ", href: "/" },
@@ -13,16 +15,16 @@ export const NAVIGATION = [
       { name: "Ban lãnh đạo", href: "/org/board-of-direction" },
       { name: "Nhóm Nghiên cứu", href: "/org/research-groups" },
       { name: "Labs", href: "/org/labs" },
-      { name: "Cựu thành viên", href: "/org/alumni" },
-    ],
+      { name: "Cựu thành viên", href: "/org/alumni" }
+    ]
   },
   {
     name: "Dự án",
     href: "/projects",
     submenu: [
       { name: "Dự án hợp tác quốc tế", href: "/projects/international" },
-      { name: "Dự án trong nước", href: "/projects/domestic" },
-    ],
+      { name: "Dự án trong nước", href: "/projects/domestic" }
+    ]
   },
   { name: "Công bố Khoa học", href: "/publications" },
   {
@@ -35,18 +37,16 @@ export const NAVIGATION = [
       { name: "Tin tức DTU", href: "/news/dtu" },
       { name: "Tin tức Viện", href: "/news/institute" },
       { name: "Thành tựu", href: "/news/achievements" },
-      { name: "Sự kiện", href: "/news/events" },
-    ],
+      { name: "Sự kiện", href: "/news/events" }
+    ]
   },
   { name: "Tuyển dụng", href: "/recruitment" },
-  { name: "Liên hệ", href: "/contact" },
+  { name: "Liên hệ", href: "/contact" }
 ];
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
-
-  
 
   return (
     <header className="bg-white shadow-md sticky top-0 z-50">
@@ -54,15 +54,11 @@ export default function Header() {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-3">
-            <div className="text-2xl font-bold text-blue-800">
-              logo
-            </div>
+            <Logo className="h-12 w-auto" />
             <div className="flex flex-col">
-              <div className="text-lg font-bold text-blue-800">
-                RIDES-HCM
-              </div>
+              <div className="text-lg font-bold text-blue-800">RIDES-HCM</div>
               <div className="text-xs text-gray-600 hidden md:block">
-                Chi nhánh Viện Nghiên cứu Thiên tai và Môi trường tại TP.HCM
+                Viện Nghiên cứu Thiên tai và Môi trường
               </div>
             </div>
           </Link>
@@ -110,19 +106,9 @@ export default function Header() {
             className="lg:hidden text-gray-700 focus:outline-none"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
-            <svg
-              className="w-6 h-6"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
+            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               {isMenuOpen ? (
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M6 18L18 6M6 6l12 12"
-                />
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
               ) : (
                 <path
                   strokeLinecap="round"
@@ -175,4 +161,3 @@ export default function Header() {
     </header>
   );
 }
-

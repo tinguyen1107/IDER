@@ -54,7 +54,7 @@ export default async function BoardOfDirectionPage() {
             <div className="bg-white rounded-lg shadow-md p-8 mb-8">
               <h1 className="text-4xl font-bold mb-4 text-gray-800">Ban lãnh đạo</h1>
               <p className="text-lg text-gray-600">
-                Giới thiệu về đội ngũ lãnh đạo của Viện Nghiên cứu Khoa học cơ bản & Ứng dụng
+                Giới thiệu về đội ngũ lãnh đạo của Viện Nghiên cứu Thiên tai và Môi trường tại TP.HCM
               </p>
             </div>
 
@@ -82,7 +82,7 @@ export default async function BoardOfDirectionPage() {
             </div>
 
             {/* Deputy Directors Section */}
-            <div className="mb-8">
+            {/* <div className="mb-8">
               <h2 className="text-2xl font-bold mb-6 text-gray-800">Phó Viện trưởng</h2>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 {leadership.deputyDirectors.map((deputy, index) => (
@@ -104,7 +104,7 @@ export default async function BoardOfDirectionPage() {
                   </div>
                 ))}
               </div>
-            </div>
+            </div> */}
 
             {/* Additional Information */}
             <div className="bg-white rounded-lg shadow-md p-8">

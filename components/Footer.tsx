@@ -9,9 +9,10 @@ export default function Footer() {
           <div>
             <h3 className="text-xl font-bold mb-4">Giới thiệu</h3>
             <p className="text-gray-300 mb-4">
-              Chi nhánh Viện Nghiên cứu Thiên tai và Môi trường tại Thành phố Hồ Chí Minh (RIDES-HCM) là đơn
-              vị trực thuộc Viện Nghiên cứu Thiên tai và Môi trường, hoạt động trong lĩnh vực môi trường, năng
-              lượng xanh, biến đổi khí hậu và phát triển bền vững.
+              <strong>Viện Nghiên cứu Thiên tai và Môi trường (RIDES)</strong> là tổ chức khoa học và công
+              nghệ hoạt động theo định hướng ứng dụng, với sứ mệnh nghiên cứu, chuyển giao công nghệ và đề
+              xuất giải pháp nhằm ứng phó, giảm thiểu rủi ro thiên tai, thích ứng với biến đổi khí hậu và bảo
+              vệ môi trường.
             </p>
             <div className="space-y-2 text-sm text-gray-400">
               <Link href="/contact" className="hover:text-white">
@@ -34,17 +35,17 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-gray-300 hover:text-white">
+                <Link href="/projects" className="text-gray-300 hover:text-white">
                   Dự án
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-gray-300 hover:text-white">
+                <Link href="/recruitment" className="text-gray-300 hover:text-white">
                   Tuyển dụng
                 </Link>
               </li>
               <li>
-                <Link href="#contact" className="text-gray-300 hover:text-white">
+                <Link href="/contact" className="text-gray-300 hover:text-white">
                   Liên hệ
                 </Link>
               </li>
@@ -55,8 +56,7 @@ export default function Footer() {
           <div id="contact">
             <h3 className="text-xl font-bold mb-4">Liên Hệ</h3>
             <div className="space-y-2 text-gray-300">
-              <p className="font-semibold">Viện Nghiên cứu Thiên tai và Môi trường (RIDES)</p>
-              <p className="font-semibold">Chi nhánh Viện Nghiên cứu Thiên tai và Môi trường tại TP.HCM</p>
+              <p className="font-semibold">Viện Nghiên cứu Thiên tai và Môi trường</p>
               <p>
                 Số 38, đường D15A, Khu nhà ở liên kế Hưng Phú (mở rộng), Phường Phước Long, Thành phố Thủ Đức,
                 TP Hồ Chí Minh, Việt Nam
